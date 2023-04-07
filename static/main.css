@@ -1,0 +1,65 @@
+:root {
+  --background-color-stop: #BA4949;
+  --color-icons-topbar: #ffffff;
+  --color-boxes: #ffffff32;
+}
+
+body {
+  background: var(--background-color-stop);
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.navbar {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 47%;
+  justify-content: space-between;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+.navbar .container img {
+  width: 1.3em;
+  height: 1.3em;
+}
+.navbar .container .logo {
+  text-decoration: none;
+  color: var(--color-icons-topbar);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 0.2em;
+}
+.navbar .topbar .primary-nav {
+  display: flex;
+  list-style: none;
+}
+.navbar .topbar .primary-nav li {
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+  margin-left: 3%;
+  background-color: var(--color-boxes);
+  padding: 2.5% 2.5%;
+  width: 20%;
+}
+.navbar .topbar .primary-nav li div {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .topbar .primary-nav li div a {
+  text-decoration: none;
+  color: var(--color-icons-topbar);
+  font-size: 80%;
+}
+.navbar .topbar .primary-nav li div img {
+  width: 20%;
+}
+.navbar .topbar .primary-nav li:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=main.css.map */
