@@ -2,6 +2,7 @@
   --background-color-stop: #BA4949;
   --color-icons-topbar: #ffffff;
   --color-boxes: #ffffff32;
+  --color-buttons: #00000024;
 }
 
 body {
@@ -39,7 +40,6 @@ body {
 }
 .navbar .topbar .primary-nav li {
   display: flex;
-  align-items: center;
   border-radius: 5%;
   margin-left: 3%;
   background-color: var(--color-boxes);
@@ -55,11 +55,61 @@ body {
 .navbar .topbar .primary-nav li div a {
   text-decoration: none;
   color: var(--color-icons-topbar);
-  font-size: 80%;
+  font-size: 1em;
 }
 .navbar .topbar .primary-nav li div img {
   width: 20%;
 }
 .navbar .topbar .primary-nav li:last-child {
   margin-right: 0;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.hero .clock {
+  margin: 4em 25em;
+  background-color: var(--color-boxes);
+}
+
+
+.hero .clock .overbar {
+  display: flex;
+  justify-content: center;
+
+}
+.hero .clock .overbar .select_clock_bar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.hero .clock .overbar .select_clock_bar li{
+  background-color: var(--color-buttons);
+  margin: 0 1.5em; /* add some space between the list items */
+  padding: 0.6em 1.2em;
+  cursor: pointer; /* change the cursor to a hand when hovering */
+  font-size: 1em;
+  color: var(--color-icons-topbar);
+}
+.hero .clock .timerbox {
+  display: flex;
+  justify-content: center;
+}
+.hero .clock .timerbox .timer {
+  font-size: 6em;
+  color: var(--color-icons-topbar);
+}
+.hero .clock .action_button_box {
+  display: flex;
+  justify-content: center;
+}
+.hero .clock .action_button{
+  font-size: 2em;
+  margin: 0.6em;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  background-color: var(--color-boxes);
+  color: var(--color-icons-topbar)
+}
+.message_box {
+  display: flex;
+  justify-content: center;
+  color: var(--color-icons-topbar);
+}
