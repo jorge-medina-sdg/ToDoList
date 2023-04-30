@@ -113,3 +113,51 @@ body {
   justify-content: center;
   color: var(--color-icons-topbar);
 }
+
+
+.hero .tasks {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+}
+
+.hero .tasks .tasks_overbar {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 2em;
+}
+
+
+.hero .tasks .tasks_overbar .task_header {
+  color: var(--color-icons-topbar)
+}
+
+.hero .tasks .tasks_overbar .tasks_options img{
+  width: 1em;
+  background-color: var(--color-boxes);
+  padding: 0.4em 0.4em;
+}
+
+.hero .tasks .task_list .task_input{
+  background-color: var(--color-boxes);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-style: dashed;
+  border-radius: 0.5em;
+  border-color: var(--color-buttons);
+}
+
+.hero .tasks .task_list .task_input input{
+  color: black;
+}
+
+.hero .tasks .task_list .task_input img{
+  width: 1em;
+}
