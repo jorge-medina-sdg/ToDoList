@@ -7,8 +7,9 @@
 
 body {
   background: var(--background-color-stop);
-  margin: 0;
+  margin-bottom: 12em;
   font-family: "Roboto";
+
 }
 
 .navbar {
@@ -65,7 +66,11 @@ body {
 }
 
 .hero .clock {
-  margin: 4em 25em;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
   background-color: var(--color-boxes);
 }
 
@@ -119,13 +124,13 @@ body {
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  width: 20em;
+  width: 28em;
 }
 
 .hero .tasks .tasks_overbar {
   display: flex;
   justify-content:space-between;
-  margin-bottom: 2em;
+  margin-bottom: 0.2em;
 }
 
 
@@ -143,7 +148,7 @@ body {
   background-color: var(--color-boxes);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   width: 100%;
   height: 5em;
   display: flex;
@@ -156,6 +161,7 @@ body {
 
 .hero .tasks .task_list .task_input input{
   color: black;
+  width: 30em;
 }
 
 .hero .tasks .task_list .task_input img{
