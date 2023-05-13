@@ -8,6 +8,7 @@ class Task {
         style.height = "3em"
         style.display = "flex"
         style.marginTop = "1em"
+        this.div.style.justifyContent = "space-between"
 
         this.span = document.createElement("span")
         this.div.appendChild(this.span)
@@ -15,8 +16,20 @@ class Task {
         this.span.style.marginTop = "auto"
         this.span.style.marginBottom = "auto"
         this.span.style.marginLeft = "1em"
+
+
+        this.delete_button = document.createElement("button")
+        this.delete_button.innerText = "Delete"
+        this.div.appendChild(this.delete_button)
+
+        const self = this
+        this.delete_button.addEventListener("click", function(event){
+            self.div.parentNode.removeChild(self.div);
+        })
+
     }
 }
+
 var task_list = document.getElementById("task_list")
 var task_input = document.getElementById("task_input")
 task_input.addEventListener("keypress", function(event){
@@ -28,3 +41,5 @@ task_input.addEventListener("keypress", function(event){
     }
     
 })
+
+
